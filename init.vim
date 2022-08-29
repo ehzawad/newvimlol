@@ -25,7 +25,7 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'shaunsingh/nord.nvim'
+Plug 'sainnhe/sonokai'
 Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'itchyny/lightline.vim'
 Plug 'antoinemadec/FixCursorHold.nvim'
@@ -51,7 +51,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 try
-  colorscheme nord
+  colorscheme sonokai
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
