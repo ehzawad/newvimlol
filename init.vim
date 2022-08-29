@@ -24,8 +24,12 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
+Plug 'tomtom/tcomment_vim'
 Plug 'shaunsingh/nord.nvim'
-
+Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
+Plug 'itchyny/lightline.vim'
+Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'lambdalisue/fern.vim'
 "" Include user's extra bundle
 if filereadable(expand("~/.config/nvim/local_bundles.vim"))
   source ~/.config/nvim/local_bundles.vim
@@ -35,6 +39,7 @@ call plug#end()
 " Required:
 filetype plugin indent on
 
+" Terminal window settings
 command! Term :botright sp | term
 command! Termvsp :vertical sp | term
 autocmd TermOpen term://* startinsert
@@ -51,3 +56,7 @@ catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
 endtry
+
+let mapleader = ","
+
+noremap <silent> <Leader>l :Fern . -drawer -reveal=% -toggle -width=35<CR><C-w>=
