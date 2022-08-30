@@ -25,6 +25,9 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
 Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-surround'
+Plug 'lambdalisue/fern-hijack.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'sainnhe/sonokai'
 Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'itchyny/lightline.vim'
@@ -80,7 +83,7 @@ function! FernInit() abort
   nmap <buffer> s <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
   nmap <buffer> r <Plug>(fern-action-reload)
-  nmap <buffer> <nowait> d <Plug>(fern-action-hidden:toggle)
+  nmap <buffer> <nowait> . <Plug>(fern-action-hidden:toggle)
   nmap <buffer> <nowait> < <Plug>(fern-action-leave)
   nmap <buffer> <nowait> > <Plug>(fern-action-enter)
 endfunction
