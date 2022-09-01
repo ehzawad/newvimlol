@@ -92,3 +92,6 @@ augroup FernEvents
   autocmd!
   autocmd FileType fern call FernInit()
 augroup END
+
+" clipboard support
+set clipboard=unnamedplus
