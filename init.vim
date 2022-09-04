@@ -24,6 +24,7 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
+Plug 'metakirby5/codi.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'lambdalisue/fern-hijack.vim'
@@ -95,3 +96,12 @@ augroup END
 
 " clipboard support
 set clipboard=unnamedplus
+
+" Enable Codi.vim
+
+let g:codi#interpreters = {
+   \ 'python': {
+       \ 'bin': '/usr/local/bin/python3',
+       \ 'prompt': '^\(>>>\|\.\.\.\) ',
+       \ },
+   \ }
