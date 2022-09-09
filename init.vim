@@ -56,6 +56,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 
 try
   colorscheme sonokai
+  let g:lightline = {'colorscheme' : 'sonokai'}
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
@@ -105,3 +106,5 @@ let g:codi#interpreters = {
        \ 'prompt': '^\(>>>\|\.\.\.\) ',
        \ },
    \ }
+
+
