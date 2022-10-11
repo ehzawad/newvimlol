@@ -7,25 +7,10 @@
           "stack.yaml",
           "*.cabal",
           "cabal.config",
-          "package.yaml",
-          "hie.yaml"
+          "package.yaml"
         ],
         "filetypes": [ "hs", "lhs", "haskell" ],
         "initializationOptions": { "languageServerHaskell": {} }
       }
-    },
-    "suggest": {
-      "disableKind": true,
-      "snippetsSupport": false
-    },
-    "diagnostic": {
-      "virtualText": true,
-      "virtualTextCurrentLineOnly": false,
-      "virtualTextLines": 1,
-      "virtualTextPrefix": " —— "
-    },
-    "list.height": 20,
-    "codeLens.enable": true,
-    "coc.preferences.enableMarkdown": true,
-    "coc.preferences.jumpCommand": "tab drop"
+    }
 } 
