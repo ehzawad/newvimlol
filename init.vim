@@ -28,7 +28,7 @@ Plug 'metakirby5/codi.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'lambdalisue/fern-hijack.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'sainnhe/sonokai'
 Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'itchyny/lightline.vim'
