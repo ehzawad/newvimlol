@@ -2,6 +2,9 @@
 
 ```sh
 git clone https://github.com/ehzawad/newvimlol.git ~/.config/nvim
+
+```
+```sh
 corepack enable
 ```
 
