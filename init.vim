@@ -114,3 +114,4 @@ set shiftwidth=2
 set expandtab
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType javascript,css,html setlocal tabstop=2 shiftwidth=2 expandtab
+" for reactjs
