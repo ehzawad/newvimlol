@@ -34,6 +34,7 @@ Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'itchyny/lightline.vim'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'lambdalisue/fern.vim'
+Plug 'linux-cultist/venv-selector.nvim'
 "" Include user's extra bundle
 if filereadable(expand("~/.config/nvim/local_bundles.vim"))
   source ~/.config/nvim/local_bundles.vim
@@ -100,13 +101,13 @@ set clipboard=unnamedplus
 
 " Enable Codi.vim
 
-let g:codi#interpreters = {
-   \ 'python': {
-       \ 'bin': '/usr/local/bin/python3',
-       \ 'prompt': '^\(>>>\|\.\.\.\) ',
-       \ },
-   \ }
-
+" let g:codi#interpreters = {
+"    \ 'python': {
+"        \ 'bin': '/usr/local/bin/python3',
+"        \ 'prompt': '^\(>>>\|\.\.\.\) ',
+"        \ },
+"    \ }
+"
 
 " new JS concern
 set tabstop=2
@@ -114,4 +115,3 @@ set shiftwidth=2
 set expandtab
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType javascript,css,html setlocal tabstop=2 shiftwidth=2 expandtab
-" for reactjs
